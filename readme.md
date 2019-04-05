@@ -1,4 +1,5 @@
-# Caching strategies
+# Service Worker sample using WORKBOX BY GOOGLE
+## Caching strategies
 
 * <u>Stale While Revalidate</u>
 This strategy will use a cached response for a request if it is available and update the cache in the background with a response form the network. (If it’s not cached it will wait for the network response and use that). This is a fairly safe strategy as it means users are regularly updating their cache. The downside of this strategy is that it’s always requesting an asset from the network, using up the user’s bandwidth.
