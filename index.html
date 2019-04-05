@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Basic Service Worker</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 70%;
+        }
+
+        h1{
+            text-align: center;
+        }
+        
+        .logo{
+            text-align: center;
+        }
+
+        .plain-text{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>BASIC SERVICE WORKER WITH WORKBOX <u>BY GOOGLE</u>(<a href="https://developers.google.com/web/tools/workbox/">DOCS</a>)</h1>
+    <div class="logo"> A LOGO: <img alt="logo" src="assets/logo.png"></div>
+    <div class="plain-text">
+        <h2> Plain text: </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla velit. Maecenas id enim tempor, tincidunt nisi quis, laoreet justo. Proin bibendum ac ipsum eu ullamcorper. Nam in urna eu est ullamcorper semper. Pellentesque tempor sapien vel erat dignissim, ac feugiat metus lacinia. Sed porttitor, eros vitae eleifend egestas, ipsum urna placerat eros, nec feugiat nisl ligula eu dui. Sed sit amet est justo.
+        </p>
+        <p>
+            Phasellus tincidunt nibh massa, ac porttitor ligula efficitur non. Mauris vel lectus euismod, maximus ligula et, consectetur lectus. Phasellus posuere, quam varius vehicula luctus, odio quam aliquam mi, nec hendrerit purus ipsum ut orci. Cras elementum vehicula ultricies. Nulla ullamcorper lectus eget dolor congue, a tincidunt nisl hendrerit. Nunc quis elit velit. Praesent aliquet turpis risus, convallis porttitor lacus posuere in. Nulla venenatis nulla in porttitor pellentesque. Pellentesque vulputate elementum nulla. In hac habitasse platea dictumst. Quisque dictum magna eget ligula molestie, at pretium diam feugiat. Donec in libero volutpat, tempor erat nec, aliquam dui. Mauris feugiat ex venenatis dignissim tincidunt. Aenean sollicitudin ac arcu eget laoreet. Aenean sed porta velit.
+        </p>        
+        <p>
+            Morbi elementum ex ac vehicula vulputate. Suspendisse potenti. Vestibulum faucibus bibendum arcu, eget ullamcorper ligula efficitur non. Donec id placerat diam, ac pulvinar metus. Morbi consequat enim diam, at euismod quam suscipit quis. Mauris dictum lectus nec luctus sollicitudin. Phasellus at egestas nisl, sit amet malesuada nisi. Morbi nec velit rhoncus, consequat massa sed, dictum tellus. Vestibulum iaculis vitae tortor eget suscipit. Aliquam tellus erat, fermentum eget erat at, facilisis finibus ante. Donec non dolor vel nibh pharetra laoreet. Cras malesuada mauris risus, vel fermentum tellus vulputate nec. Duis risus odio, porta eget suscipit eu, faucibus id mauris.
+        </p>        
+        <p>
+            Integer elementum accumsan orci. Duis felis urna, rutrum ac velit et, feugiat elementum leo. Fusce laoreet diam at nulla varius, eget maximus massa lacinia. In posuere imperdiet erat, nec dapibus turpis vulputate vel. Phasellus non est vulputate, consequat erat quis, imperdiet dui. Nam tincidunt risus ut sodales vestibulum. Vivamus aliquam placerat nisl, sit amet molestie lacus fringilla in. Sed fringilla facilisis dolor quis porta. Etiam id urna et justo pharetra vestibulum. Duis viverra nec augue id interdum. Etiam a vestibulum diam. Vivamus in pretium mauris. Nunc placerat neque nibh, eu placerat leo placerat id. Morbi eu eleifend metus, commodo tincidunt est.
+        </p>        
+        <p>
+            Vestibulum dignissim pellentesque vestibulum. Suspendisse rutrum interdum cursus. Pellentesque sed est justo. Pellentesque egestas nunc magna, in congue arcu laoreet id. Curabitur in feugiat risus. Aenean eu felis vulputate est lacinia euismod nec ac est. Aenean at consectetur risus. Morbi id dui nulla. Nulla magna massa, posuere vitae dui iaculis, tincidunt commodo felis. Fusce sit amet nibh egestas, condimentum turpis sed, sollicitudin mi.
+        </p>
+    </div>
+    
+<script>
+    if ('serviceWorker' in navigator) {
+        console.log("REGISTERR SERVICE WORKER BY WORKBOX!");
+        navigator.serviceWorker.register('sw-workbox.js');
+    }
+</script>
+</body>
+</html>
